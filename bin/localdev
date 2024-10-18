@@ -1,0 +1,4 @@
+#! /bin/bash
+set -eu
+
+poetry run uvicorn server:app --reload --port 8888
