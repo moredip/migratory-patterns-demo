@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eu
+
+# requires hey to be installed
+# https://github.com/rakyll/hey
+hey -z 10s -c 50  http://localhost:8888/calculate

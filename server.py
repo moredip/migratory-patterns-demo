@@ -40,7 +40,6 @@ async def root():
 
 @app.get("/calculate")
 async def calculate():
-    details = feature_flags.get_boolean_details("postgres_vector_store", False)
     use_postgres = feature_flags.get_boolean_value("postgres_vector_store", False)
     with tracer.start_as_current_span("fetch"):
         if use_postgres:
