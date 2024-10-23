@@ -3,4 +3,4 @@ set -eu
 
 # requires hey to be installed
 # https://github.com/rakyll/hey
-hey -z 10s -c 50  http://localhost:8888/calculate
+hey -z 10s -c 100 -t 100  http://localhost:8888/calculate
